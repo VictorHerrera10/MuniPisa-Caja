@@ -1,0 +1,120 @@
+.info-toast {
+  font-size: 14px;
+  padding: 20px 0px;
+  text-align: center;
+  position: fixed;
+  margin-top: 20px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 102;
+  width: 350px;
+  background-color: #333333;
+  color: white;
+  /* animation: aparecer 0.3s normal; */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.input-group {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+.input-field {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+.input-field:focus {
+    border-color: #3b82f6;
+  }
+  
+.input-label {
+    position: absolute;
+    top: 11px;
+    left: 0.5rem;
+    color: #6b7280;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    background: white;
+    padding: 0 2px;
+  }
+
+  .input-field:focus + .input-label,
+  .input-field:not(:placeholder-shown) + .input-label {
+    top: -9px;
+    left: 0.5rem;
+    font-size: 0.8rem;
+    color: #3b82f6;
+  }
+
+  .menu-item{
+    display: flex;
+    cursor: pointer;
+  }
+  .border-item{
+    border-left:1px solid rgb(253, 253, 253);
+  }
+  .menu-tag{
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+    border: 1px solid white;
+    background: #1E293B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-12.25px);
+    flex-shrink: 0;
+  }
+  .menu-tag i{
+    display: none;
+  }
+  .menu-active{
+    background: white;
+    color: #1E293B;
+  }
+  .menu-active i{
+    display: block;
+  }
+  .menu-point{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+  }
+  .menu-item h1{
+    color: #e2e2e2;
+  }
+  .menu-item p{
+    color: #cbd5e1;
+    font-size: 0.9rem;
+  }
+  .menu-data{
+    padding-bottom: 20px;
+  }
+  .modal-view{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .modal-view >div{
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  }
