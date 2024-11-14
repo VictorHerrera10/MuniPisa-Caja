@@ -90,7 +90,7 @@ export const HomeApp = () => {
         }
     }, [user])
 
-    return (
+    return user && (
         <div className='grid grid-cols-[2fr,1fr]'>
             <div>
                 <nav className='px-10 py-2 flex justify-between'>
